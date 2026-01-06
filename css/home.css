@@ -1,6 +1,6 @@
 .home_hero{
   height: 80vh;
-  background: url("/images/top.jpg") center / cover no-repeat;
+  background: url("./images/top.jpg") center / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
