@@ -1,0 +1,74 @@
+.header_logo{
+    width: 360px;
+    color: rgb(255, 255, 255);
+    
+}
+
+.header h1{
+    margin: 0;
+}
+
+.header{
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    z-index: 3000;
+}
+
+.header .header_nav{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header .header_nav li{
+    color: rgb(0, 127, 238);
+    
+}
+
+.header .header_nav a{
+    color: rgb(0, 6, 59);
+    display: inline-block; /* これがないとリンク範囲が全幅になる */
+    position: relative; /* 相対位置指定 */
+    text-decoration: none; /* デフォルトのテキストの下線を消す */
+}
+
+.header .header_nav a::after{
+    background-image: linear-gradient(90deg, #ff60df, #f2ff00); /* 下線の色 */
+    bottom: -4px; /* 要素の下端からの距離 */
+    content: ""; /* 要素に内容を追加 */
+    height: 2px; /* 下線の高さ */
+    left: 0; /* 要素の左端からの距離 */
+    position: absolute; /* 絶対位置指定 */
+    transform: scale(0, 1); /* 下線を横方向に0倍、縦方向に1倍に変形（非表示） */
+    transform-origin: right top; /* 変形の原点を右上に指定 */
+    transition: transform .3s; /* 変形をアニメーション化 */
+    width: 100%; /* 要素の幅 */
+}
+
+.header .header_nav a:hover::after {
+  transform-origin: left top; /* 変形の原点を左上に指定 */
+  transform: scale(1, 1); /* 下線を横方向に1倍、縦方向に1倍に変形（表示） */
+}
+
+.header::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(
+        to right,
+        rgba(255, 0, 221, 0.8),
+        rgba(229, 255, 0, 0.8)
+    )
+}
