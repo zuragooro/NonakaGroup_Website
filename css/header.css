@@ -92,7 +92,7 @@
 @media (max-width: 768px) {
     /* ロゴ */
   .header_logo_wrap {
-    width: 50vw;
+    width: 70vw;
   }
 
   .header_logo {
@@ -104,18 +104,34 @@
   /* ハンバーガー */
   .hamburger {
     display: block;
+    position: absolute;
+    top:50%;
+    right: 16px;
+    transform: translateY(-50%);
+    z-index: 2000;
   }
 
   /* ナビ：閉じている状態 */
-  .header nav ul.header_nav {
-    display: none;
+  .header .header_nav {
+    position: fixed;
+    top:0;
+    right: -70vw;
+    width: 70vw;
+    height: 100vh;
+
+    background: #fff;
+    padding: 80px 24px 24px;
+
+    display: flex;
     flex-direction: column;
-    gap: 8px;
-    margin-top: 8px;
+    gap: 16px;
+
+    transition: right 0.3s ease;
+    z-index: 1001;
   }
 
   /* ナビ：開いた状態 */
-  .header nav ul.header_nav.is-open {
-    display: flex;
+  .header .header_nav.is-open {
+    right: 0;
   }
 }
