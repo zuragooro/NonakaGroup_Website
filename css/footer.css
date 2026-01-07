@@ -3,11 +3,3 @@
     display: flex;
     justify-content: space-around;
 }
-
-.footer_contact{
-    outline: 1px solid red;
-}
-
-.footer_access{
-    outline: 1px solid red;
-}

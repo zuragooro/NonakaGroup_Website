@@ -84,7 +84,7 @@
   align-items: start;
 }
 
-.professor-name::after {
+.role::after {
   content: "";
   position: absolute;
   left: 0;
@@ -118,17 +118,6 @@
   position: relative;
 }
 
-.B4 h3::after{
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 80%;
-  height: 2px;
-  background: linear-gradient(90deg, #ff60df, #f2ff00);
-}
-
-
 .member-name {
   font-size: 1.5rem;
   margin: 0px 0px 0px;
@@ -145,7 +134,22 @@
   padding:0;
 }
 
+.home_news .news-date{
+  color: #666;
+  font-size: 0.9rem;
+  margin-right: 8px;
+}
+
+.home_news .home-content{
+  font-size: 14px;
+}
+
 @media (max-width: 768px) {
+  p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
   .home_hero {
     height: 50vh;
   }
@@ -164,13 +168,24 @@
   }
 
   .professor-name {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .role {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     margin-right: 1rem;
   }
+
+  .member-name {
+  font-size: 1rem;
+  margin: 0px 0px 0px;
+}
+
+.member-affiliation {
+  margin: 0;
+  color: #666;
+  font-size: 0.8rem;
+}
 
   .member-grid {
     grid-template-columns: 1fr;
