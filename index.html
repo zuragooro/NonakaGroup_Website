@@ -21,11 +21,18 @@
 
     <body>
         <header class="header">
-            <h1>
+            <h1 class="header_logo_wrap">
                 <a href="./index.html"><img class="header_logo" src="./images/logo.svg" alt="ロゴ"></a>
             </h1>
+
+            <button class="hamburger" id="hamburger" aria-label="メニュー">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
             <nav>
-                <ul class="header_nav">
+                <ul class="header_nav" id="headerNav">
                     <li><a href="#about">About</a></li>
                     <li><a href="#research">Research</a></li>
                     <li><a href="#member">Member</a></li>
@@ -159,6 +166,7 @@
         </footer>
 
         <script src="./js/scroll-animate.js"></script>
+        <script src="./js/hamburger.js"></script>
     </body >
 
 

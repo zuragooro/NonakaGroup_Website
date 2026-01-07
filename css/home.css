@@ -41,10 +41,6 @@
   transform: translateX(0);
 }
 
-.home_about{
-  margin: 0px 60px 0px;
-}
-
 .container{
   max-width: 1000px;
   margin: 0 auto;
@@ -147,4 +143,40 @@
 .home_news li{
   list-style: none;
   padding:0;
+}
+
+@media (max-width: 768px) {
+  .home_hero {
+    height: 50vh;
+  }
+
+  .home h2 {
+  font-size: 2rem;
+  }
+
+  .professor-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .professor-photo {
+    justify-self: center;
+  }
+
+  .professor-name {
+    font-size: 1.8rem;
+  }
+
+  .role {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+  }
+
+  .member-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .member-image {
+    margin-bottom: 30px;
+  }
 }
