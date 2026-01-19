@@ -49,7 +49,7 @@
 }
 
 .role{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #666;
   margin-right: 2rem;
 }
@@ -110,6 +110,14 @@
   background: #fff;
 }
 
+.technicalAssistant{
+  margin: 40px 0px 0px;
+}
+
+.technicalAssistant h3 {
+  position: relative;
+}
+
 .B4{
   margin: 40px 0px 0px;
 }
@@ -125,7 +133,7 @@
 
 .member-affiliation {
   margin: 0;
-  color: #666;
+  color: #6f6f6f;
   font-size: 1.2rem;
 }
 
@@ -143,6 +151,18 @@
 .home_news .home-content{
   font-size: 14px;
 }
+
+.about-text p{
+  line-height: 2.0;
+  margin-top: 20px;
+}
+
+.research-text p{
+  line-height: 2.0;
+  margin-top: 20px;
+}
+
+/*///////////////Responsive Styles///////////// */
 
 @media (max-width: 768px) {
   p {
@@ -171,9 +191,10 @@
     font-size: 1.6rem;
   }
 
-  .role {
-    font-size: 0.8rem;
-    margin-right: 1rem;
+.role{
+    font-size: 0.7rem;
+    color: #666;
+    margin-right: 2rem;
   }
 
   .member-name {
@@ -181,11 +202,11 @@
   margin: 0px 0px 0px;
   }
 
- .member-affiliation {
+  .member-affiliation {
   margin: 0;
-  color: #666;
-  font-size: 0.8rem;
-  }
+  color: #6f6f6f;
+  font-size: 0.7rem;
+}
 
   .member-grid {
     grid-template-columns: 1fr;
