@@ -61,20 +61,19 @@
 
             <section class="home_news fadein container" id="news">
                 <h2 class="fadein">News</h2>
-                <ul class="news-list">
-                    <li>
-                        <div class="news-date">2024.04.01</div>
-                        <div class="news-content">ホームページをリニューアルしました。</div>
-                    </li>
-                    <li>
-                        <div class="news-date">2024.03.15</div>
-                        <div class="news-content">杉原星南さんが学部4回生として研究室に配属されました。</div>
-                    </li>
-                    <li>
-                        <div class="news-date">2024.03.01</div>
-                        <div class="news-content">沖剛嗣さんが学部4回生として研究室に配属されました。</div>
-                    </li>
+                <ul class="news-list" id="news-list"></ul>
             </section>
+
+            <div class="modal" id="news-modal">
+                <div class="modal-content">
+                    <button class="close">&times;</button>
+                    <p class="modal-date"></p>
+                    <h3 class="modal-title"></h3>
+                    <p class="modal-body"></p>
+                </div>
+            </div>
+
+            <script src="js/news.js"></script>
 
             <section class="home_research fadein container" id="research">
                 <h2>Research</h2>
@@ -155,8 +154,7 @@
 
             <section class="home_publication fadein container" id="publication">
                 <h2 class="fadein">Publication</h2>
-                <p>最新の研究成果は Google Scholar をご覧ください。Website にも更新予定です。</p>
-                <a href="https://scholar.google.co.jp/citations?hl=ja&user=uOlq5g0AAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Google Scholar 野中洋</a>
+                <p>最新の研究成果は<a href="https://scholar.google.co.jp/citations?hl=ja&user=uOlq5g0AAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Google Scholar</a>をご覧ください。Website にも更新予定です。</p>
             </section>
         </main>
 

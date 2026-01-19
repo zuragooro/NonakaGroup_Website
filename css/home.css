@@ -137,21 +137,6 @@
   font-size: 1.2rem;
 }
 
-.home_news li{
-  list-style: none;
-  padding:0;
-}
-
-.home_news .news-date{
-  color: #666;
-  font-size: 0.9rem;
-  margin-right: 8px;
-}
-
-.home_news .home-content{
-  font-size: 14px;
-}
-
 .about-text p{
   line-height: 2.0;
   margin-top: 20px;
@@ -192,20 +177,20 @@
   }
 
 .role{
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     color: #666;
     margin-right: 2rem;
   }
 
   .member-name {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin: 0px 0px 0px;
   }
 
   .member-affiliation {
   margin: 0;
   color: #6f6f6f;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 
   .member-grid {
