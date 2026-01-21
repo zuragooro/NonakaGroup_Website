@@ -1,5 +1,37 @@
-.footer{
-    background-color: rgb(151, 151, 151);
-    display: flex;
-    justify-content: space-around;
+.footer {
+  background: #606060;
+  color: #f5f5f5;
+  padding: 48px 24px;
+}
+.footer_inner {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
+.footer h2 {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.footer p {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: #ddd;
+}
+
+/* ===== スマホ ===== */
+@media (max-width: 767px) {
+  .footer_inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer {
+    padding: 40px 20px;
+  }
 }
