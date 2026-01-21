@@ -1,0 +1,34 @@
+.topSwiper {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.topSwiper .swiper-slide {
+  width: 55%;   
+  opacity: 0.4;
+  transform: scale(0.85);
+  transition: all 0.6s ease;
+}
+
+.topSwiper .swiper-slide-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.topSwiper .swiper-slide img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.topSwiper .swiper-pagination-bullet {
+  background: #898989;
+  opacity: 0.6;
+}
+
+.topSwiper .swiper-pagination-bullet-active {
+  background: linear-gradient(180deg, #ff60df, #f2ff00);
+  opacity: 1;
+}

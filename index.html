@@ -47,7 +47,7 @@
 
         <main class="home">
 
-            <div class="swiper mainSwiper">
+            <div class="swiper topSwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img src="images/top/top1.png" alt="">
@@ -119,7 +119,10 @@
 
             <section class="home_member fadein container" id="member">
                 <h2 class="fadein">Member</h2>
-                <img class="member-image" src="./images/members/IMG_0150.jpg" alt="写真">
+                <div class="member-image">
+                    <img src="./images/members/member1.jpg" alt="member-image">
+                </div>
+                <div class="swiper-pagination"></div>
                 <div class="professor-grid">
                     <div class="professor-info">
                         <p class="professor-name"><span class="role">准教授</span> 野中 洋</p>
@@ -128,9 +131,6 @@
                             <p class="professor-orcid">ORCID ID: <a href="https://orcid.org/0000-0003-4623-2926" target="_blank">0000-0003-4623-2926</a></p>
                             <p class="professor-researchmap">Researchmap: <a href="https://researchmap.jp/space" target="_blank">https://researchmap.jp/space</a></p>
                         </div>
-                    </div>
-                    <div class="professor-photo">
-                        <img src="./images/Prof-Nonaka.png" alt="野中先生の写真">
                     </div>
                 </div>
                 <div class="technicalAssistant">
@@ -201,14 +201,14 @@
         <script src="./js/hamburger.js"></script>
         <script src="package/swiper-bundle.min.js"></script>
         <script>
-            const swiper = new Swiper('.mainSwiper', {
-                slidesPerView: 1,
-                centeredSlides: true,
-                loop: true,
-                spaceBetween: 30,
-                autoplay: {
-                    delay: 1000,
-                    disableOnInteraction: false,
+            const topSwiper = new Swiper('.topSwiper', {
+                    slidesPerView: 'auto',
+                    centeredSlides: true,
+                    loop: true,
+                    spaceBetween: 0,
+                    autoplay: {
+                        delay: 4000,
+                        disableOnInteraction: false,
                 },
                 pagination: {
                     el: '.swiper-pagination',

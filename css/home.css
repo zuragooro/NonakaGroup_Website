@@ -96,6 +96,7 @@
 
 .member-image {
   margin-bottom: 60px;
+  text-align: center;
 }
 
 .member-grid {
@@ -224,29 +225,4 @@
   body.is-fixed {
     overflow: hidden;
   }
-}
-
-
-.mainSwiper {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.swiper-slide {
-  opacity: 0.4;
-  transform: scale(0.85);
-  transition: all 0.4s ease;
-}
-
-.swiper-slide-active {
-  opacity: 1;
-  transform: scale(1);
-}
-
-.swiper-slide img {
-  width: 100%;
-  height: 60vh;
-  object-fit: cover;
-  border-radius: 12px;
 }
