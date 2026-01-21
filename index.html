@@ -14,8 +14,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="package/swiper-bundle.min.css">
+
         <!-- Original CSS-->
-         <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/style.css">
     </head>
 
 
@@ -43,9 +46,27 @@
         </header>  
 
         <main class="home">
-            <section class="home_hero">
-                <h1>Welcome to Our Site !!!</h1>
-            </section>
+
+            <div class="swiper mainSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/top/top1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/top/top2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/top/top3.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/top/top4.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/top/top5.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
 
             <section class="home_about fadein container" id="about">
                 <h2>About</h2>
@@ -98,7 +119,7 @@
 
             <section class="home_member fadein container" id="member">
                 <h2 class="fadein">Member</h2>
-                <img class="member-image" src="./images/members.png" alt="写真">
+                <img class="member-image" src="./images/members/IMG_0150.jpg" alt="写真">
                 <div class="professor-grid">
                     <div class="professor-info">
                         <p class="professor-name"><span class="role">准教授</span> 野中 洋</p>
@@ -178,7 +199,25 @@
         
         <script src="./js/scroll-animate.js"></script>
         <script src="./js/hamburger.js"></script>
+        <script src="package/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.mainSwiper', {
+                slidesPerView: 1,
+                centeredSlides: true,
+                loop: true,
+                spaceBetween: 30,
+                autoplay: {
+                    delay: 1000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+        </script>
     </body >
+    
 
 
 
